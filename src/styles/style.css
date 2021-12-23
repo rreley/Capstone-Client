@@ -1,0 +1,52 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap");
+
+#grad {
+  background-image: radial-gradient(
+    circle at 12.3%,
+    rgb(85, 88, 218) 0%,
+    rgb(95, 209, 249) 100.2%
+  );
+}
+
+#title {
+  color: white;
+}
+
+#box {
+  background-color: white;
+}
+
+#btn {
+  margin-left: 60%;
+  margin-top: 10%;
+}
+
+#surveybtn {
+  margin-left: 50%;
+}
+
+#btndisp {
+  cursor: pointer;
+  transition: filter 0.3s ease 0.3s;
+}
+
+#btndisp:active {
+  filter: drop-shadow(0 0 0 rgb(0, 0, 71));
+  transition: filter 0s;
+}
+
+@media (min-width: 650px), screen and (orientation: landscape) {
+  #surveybtn {
+    margin-left: 75%;
+  }
+}
+
+#app-name {
+  /* can be found in nav component */
+  font-family: "Zen Antique Soft", serif;
+  font-size: 2em;
+  margin-top: -0.5em;
+  /* color: hsl(0, 0%, 100%); */
+}
